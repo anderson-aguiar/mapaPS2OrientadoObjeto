@@ -14,6 +14,7 @@ public class Program {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         List<Citizen> list = new ArrayList<>();
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         System.out.print("Nome enfermeira(o): ");
         String nome = sc.nextLine();
@@ -27,7 +28,7 @@ public class Program {
         sc.nextLine();
         while (resp != 3) {
             if (resp == 1) {
-                DateTimeFormatter format = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
                 int verificador = 0;
                 System.out.print("Nome cidadão: ");
                 nome = sc.nextLine();
